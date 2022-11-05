@@ -1,0 +1,76 @@
+@import url("http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css");
+
+@font-face {
+  font-family: "Moftein";
+  src: url("../fonts/Moftein.otf");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.ttf");
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    /* background-image: radial-gradient(at 24% 48%, hsla(269,88%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 36% 92%, hsla(306,90%,75%,1) 0px, transparent 50%),
+    radial-gradient(at 5% 71%, hsla(0,78%,71%,1) 0px, transparent 50%),
+    radial-gradient(at 93% 92%, hsla(240,95%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 49% 83%, hsla(211,64%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 6% 32%, hsla(24,79%,62%,1) 0px, transparent 50%),
+    radial-gradient(at 92% 71%, hsla(334,75%,74%,1) 0px, transparent) */
+    filter: brightness(2.5);
+    background-image: radial-gradient(at 24% 48%, rgb(55, 6, 107) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 36% 92%, rgb(97, 5, 87) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 5% 71%, rgb(100, 12, 12) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 93% 92%, rgb(3, 3, 133) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 49% 83%, rgb(21, 56, 94) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 6% 32%, rgb(120, 56, 14) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 92% 71%, rgb(91, 14, 47) 0px, rgba(0, 0, 0, 0));
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.head {
+  font-size: 19rem;
+  font-family: 'Moftein';
+  color: #520404;
+  letter-spacing: -0.5rem;
+  line-height: 15rem;
+}
+
+.subHead {
+  font-size: 1rem;
+  font-family: 'Helvetica';
+  color: #010101;
+  width: 85%;
+  text-align: center;
+  line-height: 1.3;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 1024px) {
+  .head {
+    font-size: 25rem;
+    font-family: 'Moftein';
+    color: #520404;
+    letter-spacing: -0.5rem;
+    line-height: 22rem;
+    margin: 0 0 5rem 0;
+  }
+
+  .subHead {
+    font-size: 1.6rem;
+    font-family: 'Helvetica';
+    color: #010101;
+    width: 85%;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
